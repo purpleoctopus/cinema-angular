@@ -1,0 +1,19 @@
+.start-page-main{
+    background-color: gray;
+    border-radius: 5px;
+    margin-top:10px;
+}
+.film-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+section{
+    display: inline-block;
+    margin: 15px;
+    background-color: dimgray;
+    height: 580px;
+    width: 20%;
+    min-width: 250px;
+}

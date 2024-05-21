@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+a:active,
+a:hover, 
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    margin:10px;
+    background-color: lightgray;
+}

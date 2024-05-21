@@ -1,0 +1,54 @@
+.navbar-main{
+    box-sizing:border-box;
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    background-color: gray;
+    padding: 10px;
+    padding-left: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:20px;
+}
+p, .btn{
+    display:inline-block;
+    align-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.right-side{
+    display:inline-block;
+    text-align:right;
+    margin-left:auto;
+    margin-right:20px;
+}
+.btn{
+    font-size:16px;
+    box-sizing:border-box;
+    color: white;
+    font-family: 'Bahnschrift Condensed';
+    text-align: center;
+    border-radius: 1px;
+    padding: 8px;
+    width: 80px;
+    height:38px;
+    transition: opacity 0.15s;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+.btn:hover{
+    opacity: 0.75;
+}
+.btn:active{
+    opacity: 0.6;
+}
+.yt{
+    background-color: red;
+}
+.twitter{
+    background-color: white;
+    border: 2px solid blue;
+    color: blue;
+}
+.inst{
+    background-color: pink;
+}
