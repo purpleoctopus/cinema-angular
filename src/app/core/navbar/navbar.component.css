@@ -4,12 +4,12 @@
     display: flex;
     width: 99%;
     border-radius: 5px;
-    background-color: gray;
+    background-color: darkgray;
     padding: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:20px;
     top: 5px;
-    left: 5px;
+    left: 6px;
 }
 p, .btn{
     display:inline-block;
