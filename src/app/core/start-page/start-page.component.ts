@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './start-page.component.css'
 })
 export class StartPageComponent {
-
+  
 }

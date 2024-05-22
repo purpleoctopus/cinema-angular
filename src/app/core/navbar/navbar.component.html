@@ -1,8 +1,9 @@
 <div class="navbar-main">
-    <p><a routerLink="/">Кінотеатр</a></p>
+    <p><a routerLink="/">Кінотеатр {{myVariable}}</a></p>
     <div class="right-side">
-        <div class="btn yt">YouTube</div>
-        <div class="btn twitter">Twitter</div>
+        <input type="text" class="btn yt" [(ngModel)]="model.name">
+        <div class="btn yt" (click)="YoutubeButton($event)">YouTube</div>
+        <div class="btn twitter" (click)="TwitterButton($event)">Twitter</div>
         <a routerLink="/startpage"><div class="btn inst">Instagram</div></a>
     </div>
 </div>
