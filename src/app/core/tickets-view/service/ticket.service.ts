@@ -13,14 +13,10 @@ export class TicketService {
   constructor(private http: HttpClient) { }
 
   addTicket(model: CreateTicket){
-    return this.http.post<void>(`${environment.apiBaseUrl}/api/films`, model).subscribe({next: (response) => {
-      console.log("successfull");
-    }});
+    return this.http.post<void>(`${environment.apiBaseUrl}/api/films`, model);
   }
 
   getTickets(){
-    return this.http.get<Ticket>(`${environment.apiBaseUrl}/api/films`).subscribe(response => {
-      console.log(response);
-    });
+    return this.http.get<Ticket>(`${environment.apiBaseUrl}/api/films`);
   }
 }

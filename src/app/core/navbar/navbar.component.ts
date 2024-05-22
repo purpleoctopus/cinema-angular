@@ -23,10 +23,14 @@ export class NavbarComponent {
   }
   TwitterButton(event: Event): void {
     event.preventDefault();
-    this.ticketService.getTickets();
+    this.ticketService.getTickets().subscribe({next: (response) => {
+      console.log(response);
+    }});
   }
   YoutubeButton(event: Event): void {
     event.preventDefault();
-    this.ticketService.addTicket(this.model);
+    this.ticketService.addTicket(this.model).subscribe({next: (response) => {
+      console.log("successfull");
+    }});
   }
 }
