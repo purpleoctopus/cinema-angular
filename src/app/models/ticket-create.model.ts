@@ -1,5 +1,4 @@
-export interface Ticket{
-    id: string,
+export interface CreateTicket{
     name: string,
     description: string
 }

@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Ticket } from '../../../models/ticket.model';
-import { Observable } from 'rxjs';
 import { HttpClient} from '@angular/common/http';
+import { CreateTicket } from '../../../models/ticket-create.model';
+import { environment } from '../../../../environments/environment.development';
 
 
 @Injectable({
@@ -11,14 +12,14 @@ export class TicketService {
 
   constructor(private http: HttpClient) { }
 
-  addTicket(model: Ticket){
-    return this.http.post("https://localhost:44382/api/films", model).subscribe({next: (response) => {
+  addTicket(model: CreateTicket){
+    return this.http.post<void>(`${environment.apiBaseUrl}/api/films`, model).subscribe({next: (response) => {
       console.log("successfull");
-    }});;
+    }});
   }
 
   getTickets(){
-    return this.http.get("https://localhost:44382/api/films").subscribe(response => {
+    return this.http.get<Ticket>(`${environment.apiBaseUrl}/api/films`).subscribe(response => {
       console.log(response);
     });
   }

@@ -4,6 +4,7 @@ import { Ticket } from '../../models/ticket.model';
 import { FormsModule } from '@angular/forms';
 import { TicketService } from '../tickets-view/service/ticket.service';
 import { HttpClientModule } from '@angular/common/http';
+import { CreateTicket } from '../../models/ticket-create.model';
 
 @Component({
   selector: 'app-navbar',
@@ -13,8 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  model: Ticket;
-  myVariable: string = "";
+  model: CreateTicket;
   constructor(private ticketService: TicketService){
     this.model = {
       name: '',
@@ -23,11 +23,10 @@ export class NavbarComponent {
   }
   TwitterButton(event: Event): void {
     event.preventDefault();
-    console.log(this.ticketService.getTickets());
+    this.ticketService.getTickets();
   }
   YoutubeButton(event: Event): void {
     event.preventDefault();
-    console.log(this.model);
     this.ticketService.addTicket(this.model);
   }
 }
