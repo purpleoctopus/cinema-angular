@@ -1,23 +1,23 @@
 import { Injectable } from '@angular/core';
-import { Ticket } from '../../../models/ticket/ticket.model';
 import { HttpClient} from '@angular/common/http';
-import { CreateTicket } from '../../../models/ticket/ticket-create.model';
 import { environment } from '../../../../environments/environment.development';
 import { Observable } from 'rxjs';
+import { CreateFilm } from '../../../models/film/film-create.model';
+import { Film } from '../../../models/film/film.model';
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class TicketService {
+export class FilmService {
 
   constructor(private http: HttpClient) { }
 
-  addTicket(model: CreateTicket){
+  addFilm(model: CreateFilm){
     return this.http.post<void>(`${environment.apiBaseUrl}/api/films`, model);
   }
 
-  getTickets(): Observable<Ticket[]>{
-    return this.http.get<Ticket[]>(`${environment.apiBaseUrl}/api/films`);
+  getFilms(): Observable<Film[]>{
+    return this.http.get<Film[]>(`${environment.apiBaseUrl}/api/films`);
   }
 }
