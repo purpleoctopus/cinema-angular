@@ -9,7 +9,7 @@ export const routes: Routes = [
         component: StartPageComponent
     },
     {
-        path: 'buytickets',
+        path: 'buytickets/:filmid',
         component: TicketsViewComponent
     }
 ];

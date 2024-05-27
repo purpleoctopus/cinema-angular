@@ -1,0 +1,13 @@
+.footer-main{
+    position:fixed;
+    box-sizing:border-box;
+    display: flex;
+    width: calc(100% - 12px);
+    border-radius: 5px;
+    background-color: darkgray;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:20px;
+    bottom: 5px;
+    left: 6px;
+}

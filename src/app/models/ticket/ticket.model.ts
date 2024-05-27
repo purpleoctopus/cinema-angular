@@ -1,5 +1,6 @@
 export interface Ticket{
     id: string,
-    name: string,
-    description: string
+    sessionid: string,
+    row: number,
+    place: number
 }

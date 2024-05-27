@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./core/navbar/navbar.component";
 import { StartPageComponent } from "./core/start-page/start-page.component";
 import { FooterComponent } from "./core/footer/footer.component";
-import { TicketService } from './core/tickets-view/service/ticket.service';
+import { TicketService } from './core/tickets-view/service/ticket/ticket.service';
 
 
 @Component({

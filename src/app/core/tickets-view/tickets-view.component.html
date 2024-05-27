@@ -1,1 +1,23 @@
-<p>tickets-view works!</p>
+<div class="container">
+    <div class="left-side"></div>
+    <div class="right-side">
+        <div>Квитки</div>
+        <div class="sessions-container">
+            @for (item of sessions; track $index) {
+                <div class="session btn">{{item.price}}</div>
+            }
+        </div>
+        <div class="tickets-container">
+            @for(row of places; track $index){
+                <div class="row"> <div class="row-text">Ряд {{$index+1}}:</div>
+                <div class="ticket-row">
+                @for (item of row; track $index) {
+                    <div class="ticket btn {{'selected' + isButtonClicked(item)}}" 
+                    (click)="buyTicketAction(item)">{{item}}</div>
+                }
+            </div>
+            </div>
+            }
+        </div>
+    </div>  
+</div>

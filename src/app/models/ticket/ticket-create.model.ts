@@ -1,4 +1,5 @@
 export interface CreateTicket{
-    name: string,
-    description: string
+    sessionid: string,
+    row: number,
+    place: number
 }

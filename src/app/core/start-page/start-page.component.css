@@ -15,4 +15,53 @@ section{
     height: 580px;
     width: 20%;
     min-width: 250px;
+    padding:5px;
+    padding-top: 10px;
+    border-radius:5px;
+    font-family: "Bahnschrift Light";
+}
+p{
+    height: 39%;
+    overflow: hidden;
+}
+h2{
+    height: 10%;
+    margin-bottom: 10px;
+    text-align: center;
+    display:block;
+    background-color: rgb(95, 95, 95);
+    border-radius:5px;
+    font-family: "Bahnschrift";
+}
+img{
+    display: inline-block;
+    background-color: rgb(95, 95, 95);
+    width:100%;
+    height:40%;
+}
+.btn{
+    font-size:14px;
+    box-sizing:border-box;
+    font-family: 'Bahnschrift Condensed';
+    text-align: center;
+    align-content: center;
+    border-radius: 1px;
+    padding: 8px;
+    width: 80px;
+    height:38px;
+    transition: opacity 0.15s;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    border: 2px solid black;
+    margin-right: auto;
+    margin-left: auto
+}
+.btn:hover{
+    opacity: 0.75;
+}
+.btn:active{
+    opacity: 0.6;
+}
+img:not([src]){
+    visibility:hidden;
 }
