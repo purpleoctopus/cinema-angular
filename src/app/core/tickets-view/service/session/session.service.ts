@@ -17,7 +17,7 @@ export class SessionService {
     return this.http.post<void>(`${environment.apiBaseUrl}/api/sesssions`, model);
   }
 
-  getSessions(): Observable<Session[]>{
-    return this.http.get<Session[]>(`${environment.apiBaseUrl}/api/sessions`);
+  getSessions(id?: string | null): Observable<Session[]>{
+    return this.http.get<Session[]>(`${environment.apiBaseUrl}/api/sessions/${id}`);
   }
 }

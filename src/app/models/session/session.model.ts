@@ -1,6 +1,6 @@
 export interface Session{
     id: string,
     filmId: string,
-    date: string,
+    date: Date,
     price: number
 }
