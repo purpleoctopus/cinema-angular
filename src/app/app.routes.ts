@@ -5,6 +5,11 @@ import { TicketsViewComponent } from './core/tickets-view/tickets-view.component
 
 export const routes: Routes = [
     {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: '/startpage'
+    },
+    {
         path: 'startpage',
         component: StartPageComponent
     },
